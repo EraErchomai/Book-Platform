@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="c921948f-92a9-4688-86d5-f8758d592bc5"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="41990562-eaa8-4b6f-b4c5-bd1a3cb2b35d"  >
+</g>
+<g transform="matrix(1 0 0 1 542 542)" id="a317604e-85e5-48ef-abfc-8101b224b607"  >
+<path style="stroke: rgb(18,56,132); stroke-width: 4; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(237,138,25); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-23.97, -23.97)" d="M 26.285 2.486 L 31.692 13.442 C 32.068 14.204 32.795 14.732 33.636 14.854 L 45.727000000000004 16.611 C 47.845000000000006 16.919 48.690000000000005 19.521 47.158 21.014 L 38.409 29.542 C 37.801 30.135 37.522999999999996 30.990000000000002 37.667 31.827 L 39.732 43.869 C 40.094 45.978 37.88 47.586 35.986 46.591 L 25.171999999999997 40.906 C 24.419999999999998 40.510999999999996 23.520999999999997 40.510999999999996 22.769 40.906 L 11.954999999999998 46.591 C 10.060999999999998 47.587 7.846999999999999 45.978 8.208999999999998 43.869 L 10.273999999999997 31.826999999999998 C 10.417999999999997 30.99 10.139999999999997 30.134999999999998 9.531999999999996 29.541999999999998 L 0.7829999999999959 21.013999999999996 C -0.7490000000000041 19.519999999999996 0.09599999999999587 16.917999999999996 2.213999999999996 16.610999999999997 L 14.304999999999996 14.853999999999997 C 15.145999999999995 14.731999999999998 15.872999999999996 14.203999999999997 16.248999999999995 13.441999999999997 L 21.655999999999995 2.485999999999997 C 22.602 0.567 25.338 0.567 26.285 2.486 z" stroke-linecap="round" />
+</g>
+</svg>
