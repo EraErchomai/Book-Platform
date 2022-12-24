@@ -8,8 +8,6 @@ class Headers extends Component {
             <div className="header">
                 <div><img src='./logo.png' alt=' ' className='logo'/></div>
                 <div>Прочитала</div>
-                <div>Хочу прочитать</div>
-                <div>Читаю сейчас</div>
                 <div>Избранные</div>
                 <div>Жанры</div>
                 <div><button>Войти</button></div>
