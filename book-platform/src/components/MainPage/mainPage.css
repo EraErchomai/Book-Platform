@@ -12,8 +12,7 @@
     align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth; 
 }
 
 .slider::-webkit-scrollbar { width: 0; }
@@ -22,15 +21,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-left: 50px; */
 }
 
-/* .book-cover {
-    width: 170px;
-} */
-
 h3 {
-    margin-left: 50px;
+    text-align: center;
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 
 .book-info {
@@ -59,15 +56,6 @@ h3 {
 .genre {
     margin-top: 5px;
 }
-
-/* .state {
-    border-radius: 16px;
-    border: 1px solid #123884;
-    background-color: #123884;
-    height: 32px;
-    width: 100%;
-    color: white;
-} */
 
 .css-13cymwt-control {
     border-radius: 16px;
