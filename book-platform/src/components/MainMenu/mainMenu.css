@@ -1,9 +1,18 @@
 .book-item {
     width: 170px;
     height: 424px;
-    margin: 32px 16px 0 0;
+    margin: 5px 16px 16px 0;
     border: 1px solid #123884;
     border-radius: 15px 15px 24px 24px;
+}
+
+.all {
+    margin-top: 200px;
+}
+
+.book-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 10px 10px 10px grey;
 }
 
 .slider {
@@ -13,6 +22,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth; 
+    height: 480px;
 }
 
 .slider::-webkit-scrollbar { width: 0; }
@@ -51,10 +61,12 @@ h3 {
     font: 14px/17px "Source Sans Pro", sans-serif;
     margin-bottom: 5px;
     margin-top: 6px;
+    height: 30px;
 }
 
 .genre {
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .css-13cymwt-control {
@@ -76,7 +88,12 @@ h3 {
 .star {
     width: 24px;
     height: 23px;
+    margin-left: 5px;
+}
 
+.button {
+    display: flex;
+    align-items: center;
 }
 
 .not-read {
@@ -84,14 +101,15 @@ h3 {
     border: 1px solid #123884;
     background-color: #123884;
     height: 32px;
-    width: 100%;
+    width: 80%;
     color: white;
 }
+
 .read {
     border-radius: 16px;
     border: 2px solid #123884;
     background-color: white;
     height: 32px;
-    width: 100%;
+    width: 80%;
     color: black;
 }

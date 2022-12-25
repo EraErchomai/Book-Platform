@@ -16,8 +16,10 @@ class Headers extends Component {
                 <Link className="link" to="/favorites">
                 Избранные
                 </Link></div>
-                <div className='header'>Жанры</div>
-                </div>
+                <div className='header'>
+                <Link className="link" to="/genres">
+                Жанры
+                </Link></div></div>
             </div>
         );
     }

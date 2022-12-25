@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import './readPage.css';
 
 import { connect } from "react-redux";
-// import { fetchBooks } from "../../redux/actions/action";
-// import { addToRead } from "../../redux/actions/action";
-// import { addToFavorites } from "../../redux/actions/action";
 
 class ReadPage extends Component {
     render() { 
+        let read = this.props.books.filter((book) => {
+            return book.state === true
+        })
         return (
             <div>
-                {this.props.books.map((book, i) => (
+                {read.map((book, i) => (
                      <div className='book-item' key={book.id}>
                             <div className='book-cover'>
                             <img className='cover' src={book.img} alt=' '></img>

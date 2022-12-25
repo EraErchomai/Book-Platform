@@ -1,28 +1,7 @@
 const initialState = {
     favorites: [],
-    books: [
-        // {
-        //     title: '',
-        //     author: '',
-        //     genre: '',
-        //     state: 'false',
-        //     add: false
-        // },
-        // {
-        //     title: '',
-        //     author: '',
-        //     genre: '',
-        //     state: 'false',
-        //     add: false
-        // },
-        // {
-        //     title: '',
-        //     author: '',
-        //     genre: '',
-        //     state: 'false',
-        //     add: false
-        // }
-    ]
+    books: [],
+    genres: []
   };
 
 
@@ -74,7 +53,18 @@ function reducer(state = initialState, action) {
         ...state,
         books
     }
-        }
+    }
+    if (action.type === "GENRES_SEARCH") {
+        let genres = [...state.books]
+        genres = genres.filter((item) => {
+            return item.genre.indexOf(`${action.payload.str}`) !== -1
+        })
+        return {
+            ...state,
+            genres
+          };
+    }
+        
     return state;
   }
   

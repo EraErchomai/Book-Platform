@@ -24,3 +24,12 @@ export function fetchBooks(data) {
       }
     }
   }
+
+  export function genresSearch(str) {
+    return {
+      type: 'GENRES_SEARCH',
+      payload: {
+        str: str
+      }
+    }
+  }
