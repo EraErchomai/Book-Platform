@@ -1,19 +1,22 @@
-.book-item {
-    width: 170px;
-    height: 424px;
-    margin: 5px 16px 16px 0;
-    border: 1px solid #123884;
-    border-radius: 15px 15px 24px 24px;
+h3 {
+    text-align: center;
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .all {
-    margin-top: 200px;
+    padding-top: 140px;
 }
 
-.book-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 10px 10px 10px grey;
+ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 0;
+    padding: 0;
 }
+
+.slider::-webkit-scrollbar { width: 0; }
 
 .slider {
     max-width: 1112px;
@@ -23,93 +26,4 @@
     overflow-y: hidden;
     scroll-behavior: smooth; 
     height: 480px;
-}
-
-.slider::-webkit-scrollbar { width: 0; }
-
-.books-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h3 {
-    text-align: center;
-    width: 100vw;
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-
-.book-info {
-    padding: 15px;
-}
-
-.cover {
-    width: 170px;
-    height: 256px;
-    border-radius: 15px 15px 0 0;
-}
-
-.title {
-    font: 600 16px/16px "Source Sans Pro", sans-serif;
-    margin-top: 0;
-    height: 30px;
-    margin-bottom: 0;
-}
-
-.author {
-    font: 14px/17px "Source Sans Pro", sans-serif;
-    margin-bottom: 5px;
-    margin-top: 6px;
-    height: 30px;
-}
-
-.genre {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.css-13cymwt-control {
-    border-radius: 16px;
-    border: 1px solid #123884;
-    background-color: #123884;
-    height: 32px;
-    width: 100%;
-    color: white;
-}
-
-.arrow {
-    width: 30px;
-    height: 50px;
-    margin-right: 16px;
-    margin-left: 16px;
-}
-
-.star {
-    width: 24px;
-    height: 23px;
-    margin-left: 5px;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-}
-
-.not-read {
-    border-radius: 16px;
-    border: 1px solid #123884;
-    background-color: #123884;
-    height: 32px;
-    width: 80%;
-    color: white;
-}
-
-.read {
-    border-radius: 16px;
-    border: 2px solid #123884;
-    background-color: white;
-    height: 32px;
-    width: 80%;
-    color: black;
 }

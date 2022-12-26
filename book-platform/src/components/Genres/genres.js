@@ -3,36 +3,38 @@ import './genres.css';
 
 import { connect } from "react-redux";
 import { genresSearch } from "../../redux/actions/action";
+import { scaleRotate as Menu } from 'react-burger-menu'
+import BookItem from "../BookItem/bookItem";
+
+import Santa from "../Santa/santa";
+//import { Route, Link, Routes } from 'react-router-dom';
 
 class GenresPage extends Component {
+    state = {
+        genresActive: false
+    }
+    santa = () => {
+        document.querySelector('.santa-genres').style.display = 'flex'
+        document.querySelector('.genres-books').style.display = 'none'
+    }
     render() { 
         return (
             <div className='all-genres'>
-                <div className='block-menu'>
-                    <h2>ЖАНРЫ</h2>
-                    <div className='genres-title' onClick={() => this.props.genresSearch('Любовные романы')}>Любовные романы</div>
-                    <div className='genres-title' onClick={() => this.props.genresSearch('Классика')}>Классика</div>
-                    <div className='genres-title' onClick={() => this.props.genresSearch('Фэнтези')}>Фэнтези</div>
-                    <div className='genres-title' onClick={() => this.props.genresSearch('Романтическое фэнтези')}>Романтическое фэнтези</div>
-                    <div className='genres-title' onClick={() => this.props.genresSearch('Триллеры')}>Триллеры</div>
-                    <div className='genres-title' onClick={() => this.props.genresSearch('Детективы')}>Детективы</div>
-                </div>
-                <div className='genres-books'>
+                    <Menu width={ '40%' }>
+                    <a className='h2' onClick={() => this.santa()}>ЖАНРЫ</a>
+                    <a className='genres-title' onClick={() => this.props.genresSearch('Любовные романы')}>Любовные романы</a>
+                    <a className='genres-title' onClick={() => this.props.genresSearch('Классика')}>Классика</a>
+                    <a className='genres-title' onClick={() => this.props.genresSearch('Фэнтези')}>Фэнтези</a>
+                    <a className='genres-title' onClick={() => this.props.genresSearch('Романтическое фэнтези')}>Романтическое фэнтези</a>
+                    <a className='genres-title' onClick={() => this.props.genresSearch('Триллеры')}>Триллеры</a>
+                    <a className='genres-title' onClick={() => this.props.genresSearch('Детективы')}>Детективы</a>
+                    </Menu>
+                    <div className='santa-genres'><Santa /></div>
+                    {this.props.genres.length ? <ul className='genres-books'>
                     {this.props.genres.map((book, i) => (
-                     <div className='book-item' key={book.id}>
-                     <div className='book-cover'>
-                     <img className='cover' src={book.img} alt=' '></img>
-                 </div>
-                 <div className='book-info'>
-                     <p className='title'>{book.title}</p>
-                     <p className='author'>{book.author}</p>
-                     <p className='genre'>{book.genre.join('')}</p>
-                     <div className='button'><button onClick={() => this.props.addToRead(book.id)} className={book.state ? 'read' : 'not-read'}>{book.state ? 'Прочитала' : '+ Добавить'}</button>{book.add ? <img className='star' onClick={() => this.props.addToFavorites(book.id)} src={require('../../images/star-add.png')} alt=''></img> : <img className='star' onClick={() => this.props.addToFavorites(book.id)} src={require('../../images/star-not-add.png')} alt=''></img>}</div>
-                 </div>
-             </div>
+                     <li key={book.id}><BookItem {...book}/></li>
                 ))}
-                </div>
-
+                </ul> : null}
             </div>
         );
     }
@@ -46,6 +48,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => ({
     genresSearch: (str) => {
+        document.querySelector('.santa-genres').style.display = 'none'
+        //document.querySelector('.bm-menu-wrap').ariaHidden = 'false'
         dispatch(genresSearch(str))
     }
   });

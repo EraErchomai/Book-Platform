@@ -1,0 +1,83 @@
+.book-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 10px 10px 10px grey;
+}
+
+.books-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-info {
+    padding: 15px;
+}
+
+.cover {
+    width: 170px;
+    height: 256px;
+    border-radius: 15px 15px 0 0;
+}
+
+.title {
+    font: 600 16px/16px "Source Sans Pro", sans-serif;
+    margin-top: 0;
+    height: 45px;
+    margin-bottom: 0;
+}
+
+.author {
+    font: 14px/17px "Source Sans Pro", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 6px;
+    height: 30px;
+}
+
+.genre {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    width: 30px;
+    height: 50px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.star {
+    width: 24px;
+    height: 23px;
+    margin-left: 5px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.not-read {
+    border-radius: 16px;
+    border: 1px solid #123884;
+    background-color: #123884;
+    height: 32px;
+    width: 80%;
+    color: white;
+}
+
+.read {
+    border-radius: 16px;
+    border: 2px solid #123884;
+    background-color: white;
+    height: 32px;
+    width: 80%;
+    color: black;
+}
+
+.book-item {
+    width: 170px;
+    height: 435px;
+    margin: 5px 16px 16px 0;
+    border: 1px solid #123884;
+    border-radius: 15px 15px 24px 24px;
+}

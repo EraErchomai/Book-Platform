@@ -1,0 +1,52 @@
+.read-books {
+    margin: 150px 50px;
+}
+
+.side1 {
+    height: 327px;
+    width: 245px;
+    transform: rotate(30deg); 
+}
+
+.side2 {
+    height: 149px;
+    width: 170px;
+    margin-top: 10px;
+    transform: rotate(-20deg); 
+}
+
+.side3 {
+    height: 184px;
+    width: 184px;
+    transform: rotate(-30deg); 
+}
+
+.side4 {
+    height: 375px;
+    width: 292px;
+    margin-top: 10px;
+    transform: rotate(20deg); 
+}
+
+.aside1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.aside2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100vw;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.favorite-books {
+    display: flex;
+}

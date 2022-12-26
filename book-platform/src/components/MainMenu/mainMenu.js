@@ -3,9 +3,10 @@ import './mainMenu.css';
 
 import { connect } from "react-redux";
 import { fetchBooks } from "../../redux/actions/action";
-import { addToRead } from "../../redux/actions/action";
-import { addToFavorites } from "../../redux/actions/action";
-//import Santa from "../Santa/santa";
+//import { addToRead } from "../../redux/actions/action";
+import BookItem from "../BookItem/bookItem";
+//import { addToFavorites } from "../../redux/actions/action";
+
 
 class MainMenu extends Component {
     onClick = (event) => {
@@ -28,31 +29,13 @@ class MainMenu extends Component {
                     <div className='books-block'>
                     <img src={require('../../images/arrow-left.png')} className='arrow left' onClick={this.onClick} alt=''></img>
                     <div className='slider'>
+                        <ul>
                     {this.props.books.map((book, i) => (
-                     <div className='book-item' key={book.id}>
-                            <div className='book-cover'>
-                            <img className='cover' src={book.img} alt=' '></img>
-                        </div>
-                        <div className='book-info'>
-                            <p className='title'>{book.title}</p>
-                            <p className='author'>{book.author}</p>
-                            <p className='genre'>{book.genre.join('')}</p>
-                            <div className='button'><button onClick={() => this.props.addToRead(book.id)} className={book.state ? 'read' : 'not-read'}>{book.state ? 'Прочитала' : '+ Добавить'}</button>{book.add ? <img className='star' onClick={() => this.props.addToFavorites(book.id)} src={require('../../images/star-add.png')} alt=''></img> : <img className='star' onClick={() => this.props.addToFavorites(book.id)} src={require('../../images/star-not-add.png')} alt=''></img>}</div>
-                        </div>
-                    </div>
+                     <li key={book.id}><BookItem {...book}/></li>
                 ))}
-                </div>
+                </ul>
+            </div>
                 <img src={require('../../images/arrow-right.png')} className='arrow right' onClick={this.onClick} alt=''></img>
-                
-                </div>
-                <h3>Книги на английском</h3>
-                <div className='books-block'>
-                
-                
-                    </div>   
-                    <h3>Книги на турецком</h3>  
-                <div className='books-block'>
-                   
                 </div>
             </div>
         );
@@ -66,19 +49,13 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-    fetchBooks: (id) => {
+    fetchBooks: () => {
         fetch("http://localhost:3000/books")
         .then(res => res.json())
         .then(data => { 
             dispatch(fetchBooks(data))
         });
       
-    },
-    addToRead: (id) => {
-        dispatch(addToRead(id))
-    },
-    addToFavorites: (id) => {
-        dispatch(addToFavorites(id))
     }
   });
 

@@ -20,7 +20,8 @@ import store from './redux/reducers/store';
 const root = ReactDOM.createRoot(
   document.getElementById('root')
 );
-const element = <BrowserRouter>
+const element = 
+<BrowserRouter>
 <Provider store={store}>
   <App />
 </Provider>
