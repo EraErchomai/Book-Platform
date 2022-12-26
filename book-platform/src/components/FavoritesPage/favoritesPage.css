@@ -1,24 +1,41 @@
 .read-books {
-    margin: 150px 50px;
+    margin: 50px 0;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 100;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
 }
 
 .side1 {
     height: 327px;
     width: 245px;
-    transform: rotate(30deg); 
+    transform: rotate(20deg); 
 }
 
 .side2 {
-    height: 149px;
-    width: 170px;
+    height: 224px;
+    width: 255px;
     margin-top: 10px;
     transform: rotate(-20deg); 
 }
 
 .side3 {
-    height: 184px;
-    width: 184px;
+    height: 200px;
+    width: 200px;
     transform: rotate(-30deg); 
+    position: fixed;
+    right: 40px;
+    top: 100px;
 }
 
 .side4 {
@@ -26,27 +43,58 @@
     width: 292px;
     margin-top: 10px;
     transform: rotate(20deg); 
+    position: fixed;
+    right: 40px;
+    top: 300px;
 }
 
 .aside1 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100vw;
-    margin-left: 30px;
-    margin-top: 100px;
+    position: fixed;
+    left: 40px;
+    top: 50px;
 }
 
 .aside2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 100vw;
-    margin-right: 30px;
-    margin-top: 50px;
+    
 }
 
 .favorite-books {
     display: flex;
+}
+
+@media screen and (max-width:700px) {
+
+    .read-books {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .side1 {
+        opacity: 0.6;
+    }
+    
+    .side2 {
+        margin-top: 0;
+        opacity: 0.6;
+    }
+    
+    .side3 {
+        opacity: 0.6;
+        right: 10px;
+    }
+    
+    .side4 {
+        opacity: 0.6;
+        right: 10px;
+    }
+    
+    .aside1 {
+        left: 10px;
+        top: 50px;
+    }
+
+    
 }

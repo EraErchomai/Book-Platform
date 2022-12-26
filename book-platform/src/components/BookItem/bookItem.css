@@ -11,6 +11,7 @@
 
 .book-info {
     padding: 15px;
+    
 }
 
 .cover {
@@ -80,4 +81,6 @@
     margin: 5px 16px 16px 0;
     border: 1px solid #123884;
     border-radius: 15px 15px 24px 24px;
+    background-color: white;
 }
+
