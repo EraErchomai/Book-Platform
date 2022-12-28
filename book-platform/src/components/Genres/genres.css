@@ -117,4 +117,8 @@
     .bm-menu-wrap {
       width: 90% !important;
     }
+
+    .santa-genres {
+      display: none;
+    }
 }

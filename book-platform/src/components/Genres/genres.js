@@ -10,9 +10,6 @@ import Santa from "../Santa/santa";
 //import { Route, Link, Routes } from 'react-router-dom';
 
 class GenresPage extends Component {
-    state = {
-        genresActive: false
-    }
     santa = () => {
         document.querySelector('.santa-genres').style.display = 'flex'
         document.querySelector('.genres-books').style.display = 'none'
